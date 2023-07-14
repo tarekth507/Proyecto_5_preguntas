@@ -20,35 +20,35 @@ public class QuestionActivity extends AppCompatActivity {
     // Estas preguntas no son las finales, sino que se colocaron para realizar una primera prueba del código
     private String[][] questions = {
             {
-                    "¿Qué es un algoritmo?",
-                    "a) Un lenguaje de programación.",
-                    "b) Un conjunto de instrucciones para resolver un problema.",
-                    "c) Un tipo de dato utilizado en matemáticas.",
-                    "d) Una aplicación de inteligencia artificial."
+                    "1. Para lograr que el algoritmo sea creado de manera excelente, es necesario que este sea el óptimo, de manera que la carga de memoria y procesamiento sea lo más ligera posible para la computadora. Por lo tanto, existe una medida de complejidad para los algoritmos. ¿Sabes cuál es una de las formas de medir esa complejidad del algoritmo en cuestión?",
+                    "a) Observando cuán extenso es el código del algoritmo que estamos usando.",
+                    "b) Teniendo un conteo de cuantas operaciones básicas (como lo que es suma o división) tiene el algoritmo.",
+                    "c) Contando cuantos if o if-else tiene el algoritmo que estamos viendo.",
+                    "d) Observando la cantidad de archivos de memoria que utiliza nuestro algoritmo."
             },
             {
-                    "¿Cuál es el objetivo principal de un algoritmo?",
+                    "¿Cuál es el objetivo principal de un algoritmo?[PENDIENTE POR REEMPLAZAR]",
                     "a) Resolver problemas complejos de manera eficiente.",
                     "b) Generar datos estadísticos.",
                     "c) Crear interfaces de usuario intuitivas.",
                     "d) Optimizar el rendimiento de hardware."
             },
             {
-                    "¿Cuál de las siguientes opciones NO es un ejemplo de un algoritmo de ordenamiento?",
+                    "¿Cuál de las siguientes opciones NO es un ejemplo de un algoritmo de ordenamiento?[PENDIENTE POR REEMPLAZAR]",
                     "a) Burbuja (Bubble Sort).",
                     "b) Selección (Selection Sort).",
                     "c) Inserción (Insertion Sort).",
                     "d) HTML (HyperText Markup Language)."
             },
             {
-                    "¿Qué es la complejidad de un algoritmo?",
-                    "a) La dificultad de implementarlo en un lenguaje de programación específico.",
-                    "b) El número de instrucciones que contiene el algoritmo.",
-                    "c) La cantidad de recursos (tiempo o memoria) que requiere para ejecutarse.",
-                    "d) La medida de cuántos pasos son necesarios para resolver un problema."
+                    "4. Este tipo de algoritmo es diferente debido a la forma en la que procesa sus tareas durante la compilación. Funciona de manera única, ya que está diseñado con el objetivo de obtener respuestas de la forma más rápida posible. Esto se logra al realizar tareas de manera simultánea durante la ejecución. ¿A qué tipo de algoritmo nos referimos en la descripción anterior?",
+                    "a) Se refiere al algoritmo de recursividad.",
+                    "b) La descripción trata del algoritmo de procesos secuenciales.",
+                    "c) Habla acerca del algoritmo paralelo.",
+                    "d) Las respuestas anteriores no contienen la respuesta correcta."
             },
             {
-                    "¿Cuál es el enfoque principal de los algoritmos de aprendizaje automático (machine learning)?",
+                    "¿Cuál es el enfoque principal de los algoritmos de aprendizaje automático (machine learning)?[PENDIENTE POR REEMPLAZAR]",
                     "a) Resolver problemas de seguridad informática.",
                     "b) Analizar grandes volúmenes de datos.",
                     "c) Mejorar la velocidad de procesamiento de computadoras.",

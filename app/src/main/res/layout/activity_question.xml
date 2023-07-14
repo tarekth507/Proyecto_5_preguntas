@@ -18,7 +18,8 @@
         android:text="Pregunta"
         android:textAlignment="center"
         android:textColor="#8BC34A"
-        android:textSize="26sp" />
+        android:textSize="18sp"
+        android:textStyle="normal" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -69,12 +70,12 @@
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
         android:backgroundTint="#FFC107"
         android:fontFamily="sans-serif-condensed-medium"
+        android:text="Next"
         android:textSize="16sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
 </LinearLayout>
