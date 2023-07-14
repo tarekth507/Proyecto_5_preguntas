@@ -12,10 +12,13 @@
         android:id="@+id/questionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Question"
-        android:textSize="24sp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Pregunta"
+        android:textAlignment="center"
+        android:textColor="#8BC34A"
+        android:textSize="26sp" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -28,25 +31,37 @@
             android:id="@+id/option_a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option A"/>
+            android:text="Option A"
+            android:buttonTint="#E91E63"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="18sp"/>
 
         <RadioButton
             android:id="@+id/option_b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option B"/>
+            android:text="Option B"
+            android:buttonTint="#E91E63"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="18sp"/>
 
         <RadioButton
             android:id="@+id/option_c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option C"/>
+            android:text="Option C"
+            android:buttonTint="#E91E63"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="18sp"/>
 
         <RadioButton
             android:id="@+id/option_d"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option D"/>
+            android:text="Option D"
+            android:buttonTint="#E91E63"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="18sp"/>
 
     </RadioGroup>
 
@@ -56,6 +71,10 @@
         android:layout_height="wrap_content"
         android:text="Next"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FFC107"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
 
 </LinearLayout>

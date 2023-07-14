@@ -10,7 +10,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Score" />
+        android:fontFamily="sans-serif-black"
+        android:text="Score"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="28sp"/>
 
     <Button
         android:id="@+id/restartButton"
@@ -18,5 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/scoreTextView"
         android:layout_centerHorizontal="true"
-        android:text="Restart Quiz" />
+        android:text="Restart Quiz"
+        android:backgroundTint="#E91E63"
+        android:fontFamily="sans-serif-black"
+        android:insetBottom="6dp"/>
 </RelativeLayout>

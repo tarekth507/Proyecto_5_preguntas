@@ -3,12 +3,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:backgroundTint="#27FFFFFF"
+    android:backgroundTintMode="src_over"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="249dp"
+        android:layout_height="82dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="275dp"
+        android:fontFamily="sans-serif-black"
+        android:text="¿Estás listo para empezar?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="28sp" />
 
     <Button
         android:id="@+id/startButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Start Quiz" />
+        android:layout_width="168dp"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="355dp"
+        android:layout_marginBottom="315dp"
+        android:backgroundTint="#FFC107"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Empezar Quiz"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 </RelativeLayout>
