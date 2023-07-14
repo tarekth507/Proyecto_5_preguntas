@@ -10,6 +10,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class QuestionActivity extends AppCompatActivity {
 
     private Button nextButton;
@@ -17,8 +19,8 @@ public class QuestionActivity extends AppCompatActivity {
     private RadioGroup radioGroup;
     private RadioButton optionA, optionB, optionC, optionD;
 
-    // Preguntas y respuestas
-    // Estas preguntas no son las finales, sino que se colocaron para realizar una primera prueba del código
+    private ArrayList<String> questionStatus = new ArrayList<>();
+
     private String[][] questions = {
             {
                     "1. Para lograr que el algoritmo sea creado de manera excelente, es necesario que este sea el óptimo, de manera que la carga de memoria y procesamiento sea lo más ligera posible para la computadora. Por lo tanto, existe una medida de complejidad para los algoritmos. ¿Sabes cuál es una de las formas de medir esa complejidad del algoritmo en cuestión?",
@@ -85,6 +87,9 @@ public class QuestionActivity extends AppCompatActivity {
                 else {
                     if (checkAnswer()) {
                         score++;
+                        questionStatus.add("La pregunta " + (questionNumber + 1) + " fue correcta");
+                    } else {
+                        questionStatus.add("La pregunta " + (questionNumber + 1) + " fue incorrecta");
                     }
                     questionNumber++;
                     if (questionNumber < questions.length) {
@@ -92,16 +97,15 @@ public class QuestionActivity extends AppCompatActivity {
                     } else {
                         Intent intent = new Intent(QuestionActivity.this, ScoreActivity.class);
                         intent.putExtra("score", score);
+                        intent.putStringArrayListExtra("questionStatus", questionStatus);
                         startActivity(intent);
                         finish();
                     }
                 }
-
             }
         });
     }
 
-    // Carga la pregunta y las opciones de respuesta
     private void loadQuestion() {
         questionTextView.setText(questions[questionNumber][0]);
         optionA.setText(questions[questionNumber][1]);
@@ -111,7 +115,6 @@ public class QuestionActivity extends AppCompatActivity {
         radioGroup.clearCheck();
     }
 
-    // Verifica si la respuesta seleccionada es correcta
     private boolean checkAnswer() {
         int selectedOptionId = radioGroup.getCheckedRadioButtonId();
         RadioButton selectedOption = findViewById(selectedOptionId);

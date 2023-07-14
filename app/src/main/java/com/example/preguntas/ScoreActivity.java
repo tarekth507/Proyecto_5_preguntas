@@ -7,10 +7,13 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Button;
 
+import java.util.ArrayList;
+
 public class ScoreActivity extends AppCompatActivity {
 
     private Button restartButton;
     private TextView scoreTextView;
+    private TextView questionStatusTextView; // Agrega TextView para el estado de las preguntas
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +22,16 @@ public class ScoreActivity extends AppCompatActivity {
 
         restartButton = findViewById(R.id.restartButton);
         scoreTextView = findViewById(R.id.scoreTextView);
+        questionStatusTextView = findViewById(R.id.questionStatusTextView); // Enlaza el TextView
 
         int score = getIntent().getIntExtra("score", 0);
+        ArrayList<String> questionStatus = getIntent().getStringArrayListExtra("questionStatus"); // Recibe el estado de las preguntas
         scoreTextView.setText("Score: " + score);
+
+        // Muestra el estado de las preguntas
+        for (String status : questionStatus) {
+            questionStatusTextView.append(status + "\n");
+        }
 
         restartButton.setOnClickListener(new View.OnClickListener() {
             @Override
