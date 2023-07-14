@@ -8,6 +8,7 @@ import android.widget.TextView;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class QuestionActivity extends AppCompatActivity {
 
@@ -27,18 +28,18 @@ public class QuestionActivity extends AppCompatActivity {
                     "d) Observando la cantidad de archivos de memoria que utiliza nuestro algoritmo."
             },
             {
-                    "¿Cuál es el objetivo principal de un algoritmo?[PENDIENTE POR REEMPLAZAR]",
-                    "a) Resolver problemas complejos de manera eficiente.",
-                    "b) Generar datos estadísticos.",
-                    "c) Crear interfaces de usuario intuitivas.",
-                    "d) Optimizar el rendimiento de hardware."
+                    "2. Tenemos el siguiente código\nif a > b {\ntemp = a\na = b\nb = temp\n}\n¿Cuál es el propósito de este programa?",
+                    "a) Intercambiar los valores de “a” y “b”.",
+                    "b) Almacenar el valor mayor en una variable temporal para uso posterior.",
+                    "c) Asegurarse de que el valor mayor siempre este almacenado en “b” y el menor en “a”.",
+                    "d) Que “a” siempre sea el mayor."
             },
             {
-                    "¿Cuál de las siguientes opciones NO es un ejemplo de un algoritmo de ordenamiento?[PENDIENTE POR REEMPLAZAR]",
-                    "a) Burbuja (Bubble Sort).",
-                    "b) Selección (Selection Sort).",
-                    "c) Inserción (Insertion Sort).",
-                    "d) HTML (HyperText Markup Language)."
+                    "3. Un administrador de base de datos del Banco Doge desea escribir un programa que calcule el interés simple de un préstamo. ¿Cuáles serían los datos necesarios para realizar el cálculo?",
+                    "a)	Crédito y débito.",
+                    "b)	Capital Inicial y Capital final.",
+                    "c)	Monto y cantidad de veces que se compone al año.",
+                    "d)	Capital, tasa de interés y tiempo en años ."
             },
             {
                     "4. Este tipo de algoritmo es diferente debido a la forma en la que procesa sus tareas durante la compilación. Funciona de manera única, ya que está diseñado con el objetivo de obtener respuestas de la forma más rápida posible. Esto se logra al realizar tareas de manera simultánea durante la ejecución. ¿A qué tipo de algoritmo nos referimos en la descripción anterior?",
@@ -48,15 +49,15 @@ public class QuestionActivity extends AppCompatActivity {
                     "d) Las respuestas anteriores no contienen la respuesta correcta."
             },
             {
-                    "¿Cuál es el enfoque principal de los algoritmos de aprendizaje automático (machine learning)?[PENDIENTE POR REEMPLAZAR]",
-                    "a) Resolver problemas de seguridad informática.",
-                    "b) Analizar grandes volúmenes de datos.",
-                    "c) Mejorar la velocidad de procesamiento de computadoras.",
-                    "d) Automatizar tareas repetitivas en sistemas operativos."
+                    "5. Si “n” es el tamaño de la entrada de un algoritmo, un programa de complejidad O(n!) le tomará una cierta cantidad de tiempo realizar las operaciones necesarias para llegar al resultado dependiendo del valor “n”. Este tiempo sería:",
+                    "a)	Imposiblemente largo. A cierto punto, el tamaño de la entrada resultaría en un tiempo de ejecución inconcebible, siendo un algoritmo de demasiada complejidad.",
+                    "b)	Lento. Cualquier tamaño de entrada es calculable pero se puede optimizar.",
+                    "c)	Rápido, es un algoritmo altamente efectivo que puede manejar cualquier tamaño de entrada en tan solo milisegundos.",
+                    "d)	Lineal, manejará entradas de tamaño razonable pero tomará demasiado tiempo se le dan demasiadas cifras."
             }
     };
 
-    private char[] answers = {'b', 'a', 'd', 'c', 'b'};
+    private char[] answers = {'b', 'c', 'd', 'c', 'a'};
     private int score = 0;
     private int questionNumber = 0;
 
@@ -78,18 +79,24 @@ public class QuestionActivity extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (checkAnswer()) {
-                    score++;
+                if (radioGroup.getCheckedRadioButtonId() == -1) {
+                    Toast.makeText(QuestionActivity.this, "Seleccionar respuesta", Toast.LENGTH_SHORT).show();
                 }
-                questionNumber++;
-                if (questionNumber < questions.length) {
-                    loadQuestion();
-                } else {
-                    Intent intent = new Intent(QuestionActivity.this, ScoreActivity.class);
-                    intent.putExtra("score", score);
-                    startActivity(intent);
-                    finish();
+                else {
+                    if (checkAnswer()) {
+                        score++;
+                    }
+                    questionNumber++;
+                    if (questionNumber < questions.length) {
+                        loadQuestion();
+                    } else {
+                        Intent intent = new Intent(QuestionActivity.this, ScoreActivity.class);
+                        intent.putExtra("score", score);
+                        startActivity(intent);
+                        finish();
+                    }
                 }
+
             }
         });
     }
