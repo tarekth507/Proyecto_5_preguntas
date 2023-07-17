@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.Preguntas" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/yellowa1</item>
+        <item name="colorPrimaryVariant">@color/yellow_peachy</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -13,4 +13,9 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <color name="lime_green">#C8F902</color>
+    <color name="green_peachy">#97DC21</color>
+    <color name="yellowa">#D8C732</color>
+    <color name="yellow_peachy">#A89B27</color>
+    <color name="yellowa1">#FFEB3B</color>
 </resources>
