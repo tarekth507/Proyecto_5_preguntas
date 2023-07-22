@@ -13,6 +13,12 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="ActionBar" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <!-- Add more attributes as per your requirements -->
+    </style>
     <color name="lime_green">#C8F902</color>
     <color name="green_peachy">#97DC21</color>
     <color name="yellowa">#D8C732</color>

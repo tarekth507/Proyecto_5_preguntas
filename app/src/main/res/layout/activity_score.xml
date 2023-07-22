@@ -37,4 +37,5 @@
         android:fontFamily="sans-serif-black"
         android:insetBottom="6dp"
         android:text="Restart Quiz"/>
+
 </RelativeLayout>

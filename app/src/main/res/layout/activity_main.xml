@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/wallpaper_lineargradient"
-    android:backgroundTint="#28FFFFFF"
+    android:backgroundTint="#48FFFFFF"
     android:backgroundTintMode="src_over"
     android:visibility="visible"
     tools:context=".MainActivity">
@@ -35,7 +35,7 @@
         android:layout_marginStart="131dp"
         android:layout_marginTop="379dp"
         android:layout_marginBottom="315dp"
-        android:backgroundTint="#D8C732"
+        android:backgroundTint="#FFEF5F"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Empezar Quiz"
         android:textColor="#0C0C0C"
@@ -43,16 +43,17 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="412dp"
-        android:layout_height="303dp"
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="1dp"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="56dp"
-        android:layout_marginEnd="-1dp"
-        android:layout_marginBottom="372dp"
-        app:srcCompat="@drawable/quiz_time__removebg_preview" />
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="375dp"
+        app:srcCompat="@drawable/quiz_time___1__fotor_bg_remover_20230721215049" />
+
 </RelativeLayout>
