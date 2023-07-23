@@ -44,7 +44,7 @@ public class QuestionActivity extends AppCompatActivity {
                     "d) Capital, tasa de interés y tiempo en años ."
             },
             {
-                    "4. Los algoritmos tienen se pueden crear para que pueda lidiar con los escenarios en los que se necesita, pero para que estos algoritmos puedan ser los óptimos a la hora de resolver una tarea. ¿Qué debemos pensar primero para que el algoritmo se adapte a la tarea que se debe resolver?",
+                    "4. Los algoritmos se crean para que puedan lidiar con los escenarios en los que se necesita, pero para que estos algoritmos puedan ser los óptimos a la hora de resolver una tarea. ¿Qué debemos pensar primero para que el algoritmo se adapte a la tarea que se debe resolver?",
                     "a) Debes pensar en que lenguaje de programación lo vas a crear.",
                     "b) Debemos preguntarnos qué tipo de resultado queremos obtener con el algoritmo.",
                     "c) Se debe tomar en cuenta las decisiones positivas (un escenario en “si”) y las negativas (un escenario en “no”).",
