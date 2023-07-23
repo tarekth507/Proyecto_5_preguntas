@@ -37,6 +37,7 @@
             android:fontFamily="@font/amaranth_italic"
             android:paddingVertical="10dp"
             android:text="Option A"
+            android:textColor="@color/black"
             android:textSize="18sp" />
 
         <RadioButton
@@ -48,6 +49,7 @@
             android:fontFamily="@font/amaranth_italic"
             android:paddingVertical="10dp"
             android:text="Option B"
+            android:textColor="@color/black"
             android:textSize="18sp" />
 
         <RadioButton
@@ -59,6 +61,7 @@
             android:fontFamily="@font/amaranth_italic"
             android:paddingVertical="10dp"
             android:text="Option C"
+            android:textColor="@color/black"
             android:textSize="18sp" />
 
         <RadioButton
@@ -70,6 +73,7 @@
             android:fontFamily="@font/amaranth_italic"
             android:paddingVertical="10dp"
             android:text="Option D"
+            android:textColor="@color/black"
             android:textSize="18sp" />
 
     </RadioGroup>
