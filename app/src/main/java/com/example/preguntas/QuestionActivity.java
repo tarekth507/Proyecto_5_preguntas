@@ -24,38 +24,38 @@ public class QuestionActivity extends AppCompatActivity {
     private String[][] questions = {
             {
                     "1. Para lograr que el algoritmo pueda leer los datos de entrada para que pueda comenzar con los procesamientos. ¿Qué se debe tener en cuenta a la hora de crear el algoritmo?",
-                    "Se debe pensar en donde se va a procesar la variable de entrada del algoritmo.",
-                    "Se debe tener en cuenta que tipo de entrada va a leer el algoritmo (números, caracteres, etc.).",
-                    "Debemos pensar en cómo se va a imprimir el resultado al final de los procesos.",
-                    "Es necesario pensar en que operaciones se puede usar el dato que va a pedir tu algoritmo."
+                    "a) Se debe pensar en donde se va a procesar la variable de entrada del algoritmo.",
+                    "b) Se debe tener en cuenta que tipo de entrada va a leer el algoritmo (números, caracteres, etc.).",
+                    "c) Debemos pensar en cómo se va a imprimir el resultado al final de los procesos.",
+                    "d) Es necesario pensar en que operaciones se puede usar el dato que va a pedir tu algoritmo."
             },
             {
                     "2. Si queremos calcular la circunferencia de un círculo dado su radio y la fórmula (2*π*R), ¿Qué valores de la fórmula son variables y qué valores son constantes?",
-                    "El valor de π es variable",
-                    "Los valores π y R son constantes.",
-                    "El valor de π es constante y R es variable.",
-                    "Ninguna de las anteriores."
+                    "a) El valor de π es variable",
+                    "b) Los valores π y R son constantes.",
+                    "c) El valor de π es constante y R es variable.",
+                    "d) Ninguna de las anteriores."
             },
             {
                     "3. Un administrador de base de datos del Banco Doge desea escribir un programa que calcule el interés simple de un préstamo. ¿Cuáles serían los datos necesarios para realizar el cálculo?",
-                    "Crédito y débito.",
-                    "Capital Inicial y Capital final.",
-                    "Monto y cantidad de veces que se compone al año.",
-                    "Capital, tasa de interés y tiempo en años ."
+                    "a) Crédito y débito.",
+                    "b) Capital Inicial y Capital final.",
+                    "c) Monto y cantidad de veces que se compone al año.",
+                    "d) Capital, tasa de interés y tiempo en años ."
             },
             {
                     "4. Los algoritmos tienen se pueden crear para que pueda lidiar con los escenarios en los que se necesita, pero para que estos algoritmos puedan ser los óptimos a la hora de resolver una tarea. ¿Qué debemos pensar primero para que el algoritmo se adapte a la tarea que se debe resolver?",
-                    "Debes pensar en que lenguaje de programación lo vas a crear.",
-                    "Debemos preguntarnos qué tipo de resultado queremos obtener con el algoritmo.",
-                    "Se debe tomar en cuenta las decisiones positivas (un escenario en “si”) y las negativas (un escenario en “no”).",
-                    "Las respuestas anteriores no son las correctas para la pregunta."
+                    "a) Debes pensar en que lenguaje de programación lo vas a crear.",
+                    "b) Debemos preguntarnos qué tipo de resultado queremos obtener con el algoritmo.",
+                    "c) Se debe tomar en cuenta las decisiones positivas (un escenario en “si”) y las negativas (un escenario en “no”).",
+                    "d) Las respuestas anteriores no son las correctas para la pregunta."
             },
             {
                     "5. En la operación 5+7(9*3)-28, ¿Cuál sub-operación se realiza primero?",
-                    "(9*3)",
-                    "5-28",
-                    "7(9)",
-                    "5+7"
+                    "a) (9*3)",
+                    "b) 5-28",
+                    "c) 7(9)",
+                    "d) 5+7"
             }
     };
 
