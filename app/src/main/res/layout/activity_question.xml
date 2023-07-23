@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,10 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/amaranth_bold"
         android:text="Pregunta"
         android:textAlignment="center"
-        android:textColor="#8BC34A"
+        android:textColor="#A1073B"
         android:textSize="18sp"
         android:textStyle="normal" />
 
@@ -32,47 +31,55 @@
             android:id="@+id/option_a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:button="@drawable/custom_icon"
+            android:buttonTint="#FFDD3C"
+            android:fontFamily="@font/amaranth_italic"
+            android:paddingVertical="10dp"
             android:text="Option A"
-            android:buttonTint="#E91E63"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/option_b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:button="@drawable/custom_icon"
+            android:buttonTint="#FFDD3C"
+            android:fontFamily="@font/amaranth_italic"
+            android:paddingVertical="10dp"
             android:text="Option B"
-            android:buttonTint="#E91E63"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/option_c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:button="@drawable/custom_icon"
+            android:buttonTint="#FFDD3C"
+            android:fontFamily="@font/amaranth_italic"
+            android:paddingVertical="10dp"
             android:text="Option C"
-            android:buttonTint="#E91E63"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/option_d"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:button="@drawable/custom_icon"
+            android:buttonTint="#FFDD3C"
+            android:fontFamily="@font/amaranth_italic"
+            android:paddingVertical="10dp"
             android:text="Option D"
-            android:buttonTint="#E91E63"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
     </RadioGroup>
 
     <Button
         android:id="@+id/nextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="193dp"
+        android:layout_height="72dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
-        android:backgroundTint="#FFC107"
+        android:backgroundTint="#FFA82A"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Next"
         android:textSize="16sp"
