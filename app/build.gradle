@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.preguntas'
+    namespace 'com.fisc.preguntas'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.preguntas"
+        applicationId "com.fisc.preguntas"
         minSdk 27
         targetSdk 33
         versionCode 1
