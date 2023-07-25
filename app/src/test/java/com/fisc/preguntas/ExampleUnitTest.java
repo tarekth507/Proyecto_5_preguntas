@@ -1,4 +1,4 @@
-package com.example.preguntas;
+package com.fisc.preguntas;
 
 import org.junit.Test;
 
